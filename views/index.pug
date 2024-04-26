@@ -1,0 +1,72 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset='UTF-8')
+    title Portafolio de #{nombre}
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0a;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      header {
+        background-color: #A36DA9;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        color: #ffc107;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+      }
+  body
+    header
+      h1 Portafolio de #{nombre}
+      nav
+        ul
+          li
+            a(href=`/Portafolio/${nombre}`) Inicio
+          li
+            a(href=`/Portafolio/${nombre}/habilidades`) Habilidades
+          li
+            a(href=`/Portafolio/${nombre}/contacto`) Contacto
+    main.container
+      block contenido
+            h2 PRESENTACIÓN PERSONAL
+            p Mi nombre es Katherine Milagros Quispe Arias. Soy proactiva y me gusta liderar equipos de trabajo. Realicé mis estudios secundarios en el colegio Parroquial Jose Caruana, obteniendo excelencia al finalizar mis 5 años de estudio. Obtuve el tercer puesto en la carrera de Finanzas en la Universidad Nacional de San Agustín.
+    footer
+      p Tarea 06 - 2024
